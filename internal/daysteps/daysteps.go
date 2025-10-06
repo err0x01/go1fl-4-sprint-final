@@ -18,7 +18,7 @@ const (
 )
 
 func parsePackage(data string) (int, time.Duration, error) {
-	// TODO: реализовать функцию
+
 	slice := strings.Split(data, ",")
 	if len(slice) != 2 {
 		return 0, time.Duration(0), fmt.Errorf("неверный формат")
@@ -41,7 +41,7 @@ func parsePackage(data string) (int, time.Duration, error) {
 }
 
 func DayActionInfo(data string, weight, height float64) string {
-	// TODO: реализовать функцию
+
 	steps, duration, err := parsePackage(data)
 	if err != nil {
 		log.Println(err)
